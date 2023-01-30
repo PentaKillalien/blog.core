@@ -22,6 +22,7 @@ namespace Blog.Core.Extensions.Middlewares
                 {
                     DBSeed.SeedAsync(myContext, webRootPath).Wait();
                 }
+                Log.Info($"ggggg.\n");
             }
             catch (Exception e)
             {

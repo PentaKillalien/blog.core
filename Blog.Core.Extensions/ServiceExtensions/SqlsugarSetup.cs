@@ -1,6 +1,5 @@
 ﻿using Blog.Core.Common;
 using Blog.Core.Common.DB;
-using Blog.Core.Common.Helper;
 using Blog.Core.Common.LogHelper;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;

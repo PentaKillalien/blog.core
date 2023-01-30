@@ -11,7 +11,6 @@ namespace Blog.Core.Extensions
             builder.RegisterAssemblyTypes(typeof(Program).Assembly)
                 .Where(t => controllerBaseType.IsAssignableFrom(t) && t != controllerBaseType)
                 .PropertiesAutowired();
-
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Blog.Core.Extensions
     public static class Authentication_Ids4Setup
     {
         public static void AddAuthentication_Ids4Setup(this IServiceCollection services)
-        {
+        {   
             if (services == null) throw new ArgumentNullException(nameof(services));
 
 

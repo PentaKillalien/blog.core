@@ -13,7 +13,6 @@ using Blog.Core.Filter;
 using Blog.Core.Hubs;
 using Blog.Core.IServices;
 using Blog.Core.Tasks;
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
@@ -81,11 +80,14 @@ builder.Services.AddNacosSetup(builder.Configuration);
 builder.Services.AddAuthorizationSetup();
 if (Permissions.IsUseIds4)
 {
+    //配置文件读取 是否开启Ids4验证
     builder.Services.AddAuthentication_Ids4Setup();
 }
 else
 {
+    //不然就是JWT
     builder.Services.AddAuthentication_JWTSetup();
+    
 }
 
 builder.Services.AddIpPolicyRateLimitSetup(builder.Configuration);
