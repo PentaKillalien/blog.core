@@ -76,8 +76,8 @@ builder.Services.AddRabbitMQSetup();
 builder.Services.AddKafkaSetup(builder.Configuration);
 builder.Services.AddEventBusSetup();
 builder.Services.AddNacosSetup(builder.Configuration);
-
 builder.Services.AddAuthorizationSetup();
+
 if (Permissions.IsUseIds4)
 {
     //配置文件读取 是否开启Ids4验证

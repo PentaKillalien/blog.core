@@ -240,6 +240,11 @@
             创建时间
             </summary>
         </member>
+        <member name="T:Blog.Core.Model.Models.Apzl">
+            <summary>
+            政亮初体验
+            </summary>
+        </member>
         <member name="T:Blog.Core.Model.Models.BlogArticle">
             <summary>
             博客文章
